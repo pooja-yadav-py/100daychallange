@@ -1,0 +1,52 @@
+body{
+    display: grid;
+    place-items: center;
+    max-width: 100%;
+    background-color: rgb(236, 241, 241);
+    height: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+.menu_tab {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-left: -7%;
+}
+
+.tabs{
+    display: flex;
+    justify-content: center;
+    gap: 3.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    list-style: none;
+    margin-bottom: 3.2rem;
+   
+}
+
+.menu_images{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.image{
+    overflow: hidden;
+}
+.menu_images img{
+    width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 500px) {
+    .menu_images{
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 0fr));
+        gap: 20px;
+    }    
+}
+
+
+/*# sourceMappingURL=/imageFilter.9ad09f98.css.map */
